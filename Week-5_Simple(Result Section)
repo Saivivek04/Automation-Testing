@@ -1,0 +1,25 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class week5 {
+	public static void main(String[] args) throws InterruptedException{
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver,chrome.driver", "C:\\a1\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+		driver.get("https://cmritautonomous.org/beeserp/Login.aspx");
+		Thread.sleep(2000);
+		WebElement un=driver.findElement(By.name("txtUserName"));
+		un.sendKeys("21R01A7327P");
+		Thread.sleep(2000);
+		WebElement bn=driver.findElement(By.name("btnNext"));
+		bn.click();
+		WebElement ps=driver.findElement(By.name("txtPassword"));
+		ps.sendKeys("21R01A7327P");
+		Thread.sleep(2000);
+		WebElement sb=driver.findElement(By.name("btnSubmit"));
+		sb.click();
+	}
+}
