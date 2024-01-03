@@ -1,0 +1,66 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+public class week3 {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver,chrome.driver","C:\\Users\\student\\Downloads\\chromedriver-win64 (6)\\chromedriver-win64");
+
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(2000);
+
+		WebElement createacc = driver.findElement(By.className("_4jy2"));
+		Thread.sleep(2000);
+		createacc.click();
+		driver.switchTo().defaultContent();
+		Thread.sleep(1000);
+
+		WebElement firstName = driver.findElement(By.name("firstname"));
+		firstName.click();
+		Thread.sleep(1000);
+		firstName.sendKeys("Mani");
+
+		WebElement lastName = driver.findElement(By.name("lastname"));
+		lastName.click();
+		Thread.sleep(1000);
+		lastName.sendKeys("Venkat");
+
+		WebElement email = driver.findElement(By.name("reg_email__"));
+		email.click();
+		Thread.sleep(1000);
+		email.sendKeys("manivenkat672@gmail.com");
+
+		WebElement password = driver.findElement(By.xpath("//*[@id=\"password_step_input\"]"));
+		password.click();
+		Thread.sleep(1000);
+		password.sendKeys("Manivenkat472@");
+
+		WebElement conf_email = driver.findElement(By.name("reg_email_confirmation__"));
+		conf_email.click();
+		Thread.sleep(1000);
+		conf_email.sendKeys("manivenkat672@gmail.com");
+
+		Select DB = new Select(driver.findElement(By.name("birthday_day")));
+		DB.selectByValue("4");
+		Thread.sleep(1000);
+		
+		Select DM = new Select(driver.findElement(By.name("birthday_month")));
+		DM.selectByValue("7");
+		Thread.sleep(1000);
+
+		Select DY = new Select(driver.findElement(By.name("birthday_year")));
+		DY.selectByValue("2002");
+
+ 
+		WebElement gender = driver.findElement(By.xpath("(//label[normalize-space()='Male'])[1]"));
+		gender.click();
+		Thread.sleep(1000);
+
+		WebElement SignUp = driver.findElement(By.className("_6wl"));
+		Thread.sleep(2000);
+		SignUp.click();
+	}
+}
