@@ -35,11 +35,11 @@ public class week10 {
         Thread.sleep(500);
  
         Select month = new Select(driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/c-wiz/div[2]/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div[2]/select")));
-		month.selectByValue("10");
-		Thread.sleep(500);
- 
-		WebElement year = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/c-wiz/div[2]/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[3]/div/div/div[1]/div/div[1]/input"));
-		year.click();
+	month.selectByValue("10");
+	Thread.sleep(500);
+
+	WebElement year = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/c-wiz/div[2]/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[3]/div/div/div[1]/div/div[1]/input"));
+	year.click();
         year.sendKeys("2003");
         Thread.sleep(500);
  
