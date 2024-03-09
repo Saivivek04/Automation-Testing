@@ -13,14 +13,14 @@ public class week5 {
 		Thread.sleep(2000);
 
 		WebElement un=driver.findElement(By.name("txtUserName"));
-		un.sendKeys("21R01A7327P");
+		un.sendKeys("21R01A7262P");
 		Thread.sleep(2000);
 
 		WebElement nb=driver.findElement(By.name("btnNext"));
 		nb.click();
 
 		WebElement ps=driver.findElement(By.name("txtPassword"));
-		ps.sendKeys("21R01A7327P");
+		ps.sendKeys("21R01A7262P");
 		Thread.sleep(2000);
 
 		WebElement sb=driver.findElement(By.name("btnSubmit"));
