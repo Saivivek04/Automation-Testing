@@ -12,12 +12,12 @@ public class week5 {
 		obj.get("https://cmritautonomous.org/beeserp/Login.aspx");
 		Thread.sleep(2000);
 		WebElement un=obj.findElement(By.name("txtUserName"));
-		un.sendKeys("21R01A7327P");
+		un.sendKeys("21R01A7262P");
 		Thread.sleep(2000);
 		WebElement bn=obj.findElement(By.name("btnNext"));
 		bn.click();
 		WebElement ps=obj.findElement(By.name("txtPassword"));
-		ps.sendKeys("21R01A7327P");
+		ps.sendKeys("21R01A7262P");
 		Thread.sleep(2000);
 		WebElement sb=obj.findElement(By.name("btnSubmit"));
 		sb.click();
