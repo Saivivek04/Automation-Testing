@@ -32,4 +32,4 @@ We welcome contributions to improve and expand our Selenium testing framework. F
 Special thanks to the Selenium community and contributors for their invaluable support and resources.
 
 # Credits
-This project was developed @Saivivek04
+This project was developed by [Sai Vivek](https://github.com/Saivivek04).
