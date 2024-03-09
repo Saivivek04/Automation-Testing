@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-public class week2 {
+public class mercury {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver,chromedriver","C:\\Users\\student\\Pictures\\Camera Roll\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
