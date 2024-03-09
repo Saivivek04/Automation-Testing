@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-public class week3 {
+public class Facebook {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver,chrome.driver","C:\\Users\\student\\Downloads\\chromedriver-win64 (6)\\chromedriver-win64");
 
