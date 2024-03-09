@@ -5,8 +5,8 @@ This repository contains automation testing scripts developed for testing the Va
 
 # Prerequisites
 Ensure you have the following installed on your system:
-Java Development Kit (JDK)
-Selenium WebDriver
+Java Development Kit (JDK),
+Selenium WebDriver,
 IDE (e.g., IntelliJ, Eclipse) - optional but recommended
 
 # Configuration
@@ -32,4 +32,4 @@ We welcome contributions to improve and expand our Selenium testing framework. F
 Special thanks to the Selenium community and contributors for their invaluable support and resources.
 
 # Credits
-This project was developed by https://github.com/Saivivek04
+This project was developed Saivivek04
